@@ -24,13 +24,13 @@ artistList.artistRequest = function(artname){
 }
 
 artistList.artistInfo = function(artistProfile){
-	console.log('1. Name of band = ' + artistProfile.name);
-	console.log('2. Artist Location = ' + artistProfile.artist_location.location);
-	console.log('3. Artist Biography = ' + artistProfile.biographies[0]);
-	console.log('4. Hotttnesss = ' + Math.floor(artistProfile.hotttnesss * 100));
-	console.log('5. News = ' + artistProfile.news[0]);
-	console.log('6. Blogs = ' + artistProfile.blog[0] + artistProfile.blog[1] + artistProfile.blog[2]);
-	console.log('7. URL =' + artistProfile.urls);
+	console.log('1. Name of band = ' , artistProfile.name);
+	console.log('2. Artist Location = ' , artistProfile.artist_location.location);
+	console.log('3. Artist Biography = ' , artistProfile.biographies[0]);
+	console.log('4. Hotttnesss = ' , Math.floor(artistProfile.hotttnesss * 100));
+	console.log('5. News = ' , artistProfile.news[0]);
+	console.log('6. Blogs = ' , artistProfile.blog[0] + artistProfile.blog[1] + artistProfile.blog[2]);
+	console.log('7. URL =' , artistProfile.urls);
 };
 
 // autocomplete
