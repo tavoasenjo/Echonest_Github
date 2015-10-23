@@ -92,9 +92,9 @@ artistList.artistBio = function(artistProfile){
 	if(artistProfile.biographies === undefined){
 		$('.artistBio').html('No bio found');
 	}else{
-		$('.artistBio').html('<h4>Bio Site: </h4>'+artistProfile.biographies[0].site);
-		$('.artistBio').html('<h4>Bio Text: </h4>'+artistProfile.biographies[0].text);
-		$('.artistBio').html('<h4>Bio Url: </h4>'+artistProfile.biographies[0].url);
+		$('.artistBio').append('<h4>Bio Site: </h4>'+artistProfile.biographies[0].site);
+		$('.artistBio').append('<h4>Bio Text: </h4>'+artistProfile.biographies[0].text);
+		$('.artistBio').append('<h4>Bio Url: </h4>'+artistProfile.biographies[0].url);
 	};
 	artistList.artistNews(artistProfile);
 	console.log(artistProfile.biographies[0]);

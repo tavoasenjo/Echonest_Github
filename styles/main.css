@@ -123,8 +123,6 @@ input[type=checkbox], input[type=radio] {
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -161,8 +159,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -179,7 +175,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: 1s all;
+  -webkit-transition: 1s all;
+          transition: 1s all;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -212,7 +209,7 @@ form {
   top: 415px;
 }
 
-input[type=search] {
+input[type=text] {
   background: rgba(225, 225, 225, 0.5);
   color: black;
   text-transform: uppercase;
@@ -265,10 +262,22 @@ button {
 }
 
 .fillerImages {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   height: 50vh;
   border-bottom: 3px solid #FF6699;
@@ -309,10 +318,22 @@ button {
 }
 
 .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   height: 100vh;
 }
@@ -372,56 +393,53 @@ button {
   margin: 20px;
 }
 
-.artistNav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: 1s all;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
-  background: black;
-  z-index: 999;
-  height: 25vh;
-}
-
-.artistLogo {
-  float: left;
-  margin-right: 25%;
-  margin-top: 2%;
-  display: inline-block;
-  width: 35%;
-  padding: 10px;
-  margin-left: 3%;
-}
-
 .mainMiddleContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-top: 25vh;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .artistLeftContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 60%;
 }
 
 .artistLeftContainer .artistImages {
   height: 100vh;
-  background: url(../images/headerImage3.jpg);
   background-size: cover;
 }
 
-.artistLeftContainer .artistContent {
+.artistLeftContainer .artistBio {
   height: 100vh;
   background: #808080;
+  width: 100%;
 }
 
-.artistBio {
+.artistContent {
   width: 40%;
   background: #b2b2b2;
 }
@@ -433,10 +451,22 @@ button {
 }
 
 .blogNewsContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 70vh;
 }
 
@@ -449,5 +479,5 @@ button {
 }
 
 .artistNews {
-  background: black;
+  background: green;
 }
