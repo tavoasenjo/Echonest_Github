@@ -50,6 +50,8 @@ artistList.artistRequest = function(artname){
    tried making it fool proof but didnt work cos of call size
    ========================================================================== */
 
+$('#wholeArtistContainer').hide();
+
 artistList.artName = function(artistProfile){
 	$('.artistName').html(artistProfile.name);
 	artistList.artistHotness(artistProfile);
@@ -92,9 +94,9 @@ artistList.artistBio = function(artistProfile){
 	if(artistProfile.biographies === undefined){
 		$('.artistBio').html('No bio found');
 	}else{
-		$('.artistBio').html('<h4>Bio Site: </h4>'+artistProfile.biographies[0].site);
-		$('.artistBio').html('<h4>Bio Text: </h4>'+artistProfile.biographies[0].text);
-		$('.artistBio').html('<h4>Bio Url: </h4>'+artistProfile.biographies[0].url);
+		$('.artistBio').append('<h4>Bio Site: </h4>'+artistProfile.biographies[0].site);
+		$('.artistBio').append('<h4>Bio Text: </h4>'+artistProfile.biographies[0].text);
+		$('.artistBio').append('<h4>Bio Url: </h4>'+artistProfile.biographies[0].url);
 	};
 	artistList.artistNews(artistProfile);
 	console.log(artistProfile.biographies[0]);
@@ -145,10 +147,28 @@ artistList.init = function(){
 			$('#search').val('');
 			console.log(nameArtist);
 			artistList.artistRequest(nameArtist);
-			// location.href = 'artistPage.html';
+			$('#wholeArtistContainer').show();
+			function submitform() {   
+				document.myform.submit(); 
+			} 
+
 	});
 };
 
 $(function(){
 	artistList.init();
+
+	//smooth scroll
+		$('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+	    });
 });

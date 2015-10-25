@@ -122,68 +122,268 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0; 
-}
+  height: 0; }
 
 * {
   box-sizing: border-box; }
 
-body{
-  background: lightblue;
-}
+header .headerMain {
+  background: url(../images/mainHeaderImage3.jpg);
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  background-position: 0 78%;
+  border-bottom: 3px solid #FF6699;
+  margin-top: 5%; }
 
-section.artistPageSection {
-  height: 100vh;
-  background: tomato; 
-}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 1s all;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: black;
+  z-index: 999;
+  height: 28vh; }
 
-.wrapper{
- max-width: 950px;
- margin: 0 auto;
- text-align: center;
-}
+.logo {
+  float: left;
+  margin-right: 35%;
+  margin-top: 2%;
+  display: inline-block;
+  width: 35%;
+  padding: 10px;
+  margin-left: 3%; }
 
-input{
- border: none;
-  padding: 10px 25px;
-}
+.colour-change {
+  background: black;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25); }
 
-input[type=text]{
- margin-top: 200px;
- border: none;
- background: yellow;
- width: 50%;
-}
+.appear {
+  opacity: 1; }
 
-input[type=submit]{
- background: tomato;
-}
+form {
+  position: relative;
+  top: 415px; }
 
-ul.ui-autocomplete.ui-menu li{
-   background: tomato;
-   color: white;
-   border-bottom: 1px solid white;
-  /* width: 50%;*/
-}
+input[type=text] {
+  background: rgba(225, 225, 225, 0.5);
+  color: black;
+  text-transform: uppercase;
+  border: 3px solid black;
+  letter-spacing: 2;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px 70px;
+  text-align: center;
+  position: relative;
+  margin-left: 15%;
+  width: 30%; }
 
-ul.ui-autocomplete.ui-menu li:hover{
- background: yellow;
-}
+input[type=submit] {
+  background: rgba(225, 225, 225, 0.5);
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid black;
+  letter-spacing: 2;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: center;
+  position: relative;
+  width: 15%; }
 
+button {
+  background: rgba(225, 225, 225, 0.5);
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid black;
+  letter-spacing: 2;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: center;
+  position: relative;
+  width: 15%; }
 
-ui-autocomplete-input{
- background: red;
-}
+.gallerySearch {
+  width: 100%;
+  height: 40vh;
+  background: #e5e5e5; }
 
-.artistBlog, .artistNews, .artistNews, .blogNewsContainer, .artistVideo, .artistBio{
- margin-bottom: 50px;
- width: 40%;
-}
+.fillerImages {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  border-bottom: 3px solid #FF6699; }
 
-h4{
- color: grey;
-}
+.filler-box {
+  width: 25%;
+  height: 50vh;
+  background: #4c1e2d; }
+  .filler-box img {
+    width: 80%;
+    position: relative;
+    top: 25%;
+    left: 29%;
+    height: 35vh; }
 
-h1{
- color: #333;
-}
+.filler1 {
+  background: url(../images/entertainment.jpg);
+  background-size: cover; }
+
+.filler2 {
+  background: url(../images/recording.jpg);
+  background-size: cover; }
+
+.filler3 {
+  background: url(../images/publishing.jpg);
+  background-size: cover; }
+
+.filler4 {
+  background: url(../images/management.jpg);
+  background-size: cover; }
+
+.info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100vh; }
+  .info h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.7rem;
+    padding-left: 10%; }
+  .info p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding-left: 10%;
+    padding-right: 30%; }
+
+.info-box {
+  width: 50%;
+  height: 100vh; }
+
+.info-one {
+  background: #e5e5e5; }
+
+.info-two {
+  background: url(../images/infoImage.jpg);
+  background-size: cover; }
+
+.gallery {
+  width: 100%; }
+
+.fillerSecond {
+  background: url(../images/crowd.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  background-position: 0 100%;
+  position: relative;
+  z-index: 1; }
+  .fillerSecond h1 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color: white; }
+
+.flickity {
+  border: 2px solid #000;
+  border-radius: 100%;
+  margin: 20px; }
+
+.wholeArtistContainer {
+  display: none; }
+
+.mainMiddleContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.artistLeftContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%; }
+  .artistLeftContainer .artistImages {
+    height: 100vh;
+    background-size: cover; }
+  .artistLeftContainer .artistBio {
+    height: 100vh;
+    background: #808080;
+    width: 100%; }
+
+.artistContent {
+  width: 40%;
+  background: #b2b2b2; }
+
+.artistVideo {
+  width: 100%;
+  height: 70vh;
+  background: #404040; }
+
+.blogNewsContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 70vh; }
+
+.artistNews {
+  width: 60%; }
+
+.artistBlog {
+  width: 40%; }
+
+.artistNews {
+  background: green; }

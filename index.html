@@ -3,40 +3,117 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Last Gang Records</title>
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css">
+	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+	<!-- css animation -->
+	 <link rel="stylesheet" href="animate.css">
+	 <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 	<header>
-		<div class="wrapper">
-			<form action="">
-				<input type="text" id="search">
-				<input type="submit" class="btnSearch">
-			</form>
-		</div>
+	caca
+		<div class="headerMain">
+			<nav class="nav">
+				<div class="nav-logo">
+					<img class="logo" src="images/logo.png" alt="">
+				</div>
+			</nav>
+			<div class="headerCenter">
+
+				<div class= "form">	
+					<form action="" id="myform">	
+						
+						<h1>Search for Artist</h1>
+					  	<input type="text" name="" id="search" placeholder="Search by Artist Name">
+						<!-- <input class="btnSearch" type="submit" value="submit" placeholder="" > -->
+
+						<a href="#wholeArtistContainer" class="btnSearch" type="submit" value="submit" placeholder="">Submiten</a>
+						
+					</form>
+				</div> <!-- end of form -->
+			</div>
+		</div> <!-- end of header-main -->
 	</header>
-	<section class="gallery">
-		<h1>Name</h1>
-		<div class="artistName"></div>
-		<h1>Hotttnesss%</h1>
-		<div class="artistHotness"></div>
-		<h1>Location</h1>
-		<div class="artistLocation"></div>
-		<h1>URL</h1>
-		<div class="artistUrl"></div>
-		<h1>Bio</h1>
-		<div class="artistBio"></div>
-		<h1>News</h1>
-		<div class="artistNews"></div>
-		<h1>Blog</h1>
-		<div class="artistBlog"></div>
+	<section class="fillerImages">
+			<div class="filler-box filler1">
+			</div>
+			<div class="filler-box filler2">
+				
+			</div>
+			<div class="filler-box filler3">
+				
+			</div>
+			<div class="filler-box filler4">
+				
+			</div>
+	</section>
+	<!-- end of filler images -->
+	<!-- start of info section -->
+	<section class="info">
+		<div class="info-box info-one">
+			<h1>
+				Welcome
+			</h1>
+			<p>Last Gang Records is a music label founded in 2003, releasing the first Metric album ‘Old World Underground, Where Are You Now?’ in 2004. Primary operations are based in Toronto, Canada with offices in London, England and Los Angeles, California. Last Gang’s core activities involve music production and distribution, international licensing, marketing and promotion, and overall project management.</p>
+		</div>
+		<div class="info-box info-two">
 		
+		</div>
+	</section>
+	 <!-- end of info section -->
+	 <!-- start of Artist Page -->
+	<section id="wholeArtistContainer">
+		<section class="mainMiddleContainer">
+			<div class="artistLeftContainer">
+				<div class="artistImages"></div>
+				<div class="artistBio"></div>
+			</div>
+			<div class="artistContent">
+				<div class="artistName"></div>
+				<div class="artistHotness"></div>
+				<div class="artistLocation"></div>
+				<div class="artistUrl"></div>
+			</div>
+			
+		</section> 
+		<section class="artistVideo">
+		</section>
+		<section class="blogNewsContainer">
+			<div class="artistBlog">
+				
+			</div>
+			<div class="artistNews">
+				
+			</div>
+		</section>
+	</section> <!-- end of artist whole container -->
+	<!-- <section>
+		<div class="gallery">
+			<a href="facebook.com"><img class="flickity" src="images/image1.jpg" alt="tada"></a>
+			<a href="facebook.com"><img class="flickity" src="images/image2.jpg" alt="tada"></a>
+			<a href="facebook.com"><img class="flickity" src="images/image2.jpg" alt="tada"></a>
+			<a href="facebook.com"><img class="flickity" src="images/image4.jpg" alt="tada"></a>
+			<a href="facebook.com"><img class="flickity" src="images/image5.jpg" alt="tada"></a>
+		</div>
+	</section>
+	<!-- end of gallery --> 
+	<!-- start of fillerSection -->
+	<section class="fillerSecond">
+		<h1> Music can change the world because it can change people.</h1>
 	</section>
 	<footer>
 		
 	</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- script -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- flickity -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
+
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="scripts/app.js"></script>
 </body>
