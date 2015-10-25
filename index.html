@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">	
 <head>
 	<meta charset="UTF-8">
 	<title>Last Gang Records</title>
@@ -8,113 +8,269 @@
 	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
+​
 	<!-- css animation -->
 	 <link rel="stylesheet" href="animate.css">
 	 <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+	<div class="bodyWrapper">
+	<div class="bodyImage">
 	<header>
-	caca
 		<div class="headerMain">
 			<nav class="nav">
-				<div class="nav-logo">
 					<img class="logo" src="images/logo.png" alt="">
-				</div>
 			</nav>
+			<!-- end of nav -->
+			<!-- start of headerCenter -->
 			<div class="headerCenter">
-
-				<div class= "form">	
-					<form action="" id="myform">	
-						
-						<h1>Search for Artist</h1>
-					  	<input type="text" name="" id="search" placeholder="Search by Artist Name">
-						<!-- <input class="btnSearch" type="submit" value="submit" placeholder="" > -->
-
-						<a href="#wholeArtistContainer" class="btnSearch" type="submit" value="submit" placeholder="">Submiten</a>
-						
-					</form>
-				</div> <!-- end of form -->
+				<h1>Explore New Sounds</h1>
+				<p>Search artist's bios, blogs, news, videos and more</h1>
+			</div> <!-- end of headerCenter -->
+			<!-- start of form section -->
+			<div class="formSection">
+				<form action="">
+				  	<input type="text" name="" id="search" placeholder="Enter Artist Name">
+					<input class="btnSearch" type="submit" value="submit" placeholder="" >
+				</form><!-- end of form  -->
 			</div>
 		</div> <!-- end of header-main -->
 	</header>
-	<section class="fillerImages">
-			<div class="filler-box filler1">
+	<!-- end of header
+	<!-- start of middle header section -->
+	<section class="mainWrapper">
+		<div class="Title">
+			<div class="lastestTitle">
+				<h1>Featured Albums</h1>
+			</div>	
+		</div>
+		<div class="lastest">
+			<div class="lastestBox lastestOne">
+				<a  href="http://shop.lastgang.com/">
+					<img class="link" src="images/lastestArtistOne.jpg" alt="">
+				</a> 	
 			</div>
-			<div class="filler-box filler2">
-				
+			<div class="lastestBox lastestTwo">
+				<a href="http://shop.lastgang.com/">
+					<img src="images/lastestImageTwo.jpg" alt="">
+				</a> 
 			</div>
-			<div class="filler-box filler3">
-				
+			<div class="lastestBox lastestThree">
+				<a href="http://shop.lastgang.com/">
+					<img src="images/lastestImageThree.jpg" alt="">
+				</a> 
 			</div>
-			<div class="filler-box filler4">
-				
-			</div>
+		</div>
+			
 	</section>
 	<!-- end of filler images -->
-	<!-- start of info section -->
-	<section class="info">
-		<div class="info-box info-one">
-			<h1>
-				Welcome
-			</h1>
-			<p>Last Gang Records is a music label founded in 2003, releasing the first Metric album ‘Old World Underground, Where Are You Now?’ in 2004. Primary operations are based in Toronto, Canada with offices in London, England and Los Angeles, California. Last Gang’s core activities involve music production and distribution, international licensing, marketing and promotion, and overall project management.</p>
+	<!-- start of Lastest A section -->
+	<section class="mainWrapper">
+		<div class="Title">
+			<div class="lastestTitle">
+				<h1>about</h1>
+			</div>	
 		</div>
-		<div class="info-box info-two">
-		
+		<div class="info">
+			<div class="info-box info-one">
+				<p>Last Gang Records is a music label founded in 2003, releasing the first Metric album ‘Old World Underground, Where Are You Now?’ in 2004. Primary operations are based in Toronto, Canada with offices in London, England and Los Angeles, California. </p>
+			</div>
+			<div class=" info-box info-two">
+				<p>
+				Last Gang’s core activities involve music production and distribution, international licensing, marketing and promotion, and overall project management.	
+				</p>
+			</div>
 		</div>
 	</section>
 	 <!-- end of info section -->
 	 <!-- start of Artist Page -->
-	<section id="wholeArtistContainer">
-		<section class="mainMiddleContainer">
-			<div class="artistLeftContainer">
-				<div class="artistImages"></div>
-				<div class="artistBio"></div>
+	<section class="wholeArtistContainer">
+		<section class="mainWrapper">
+			<!-- artist header -->
+			<div class="artistHeader">
+				<div class="artistImages">
+					
+				</div>
+				<div class="artistName">
+					<h1>DCF</h1>
+				</div>
 			</div>
-			<div class="artistContent">
-				<div class="artistName"></div>
-				<div class="artistHotness"></div>
-				<div class="artistLocation"></div>
-				<div class="artistUrl"></div>
+			<!-- end of artist header -->
+			<!-- start of section two title -->
+			<div class="sectionTitle">
+				<div class="leftTitle">
+					<h1>Info</h1>
+				</div>
+					
+				<div class="rightTitle">
+					<h1>Bio</h1>
+				</div>
 			</div>
-			
-		</section> 
-		<section class="artistVideo">
+			<!-- end of section two title -->
+			<!-- start of section two -->
+			<div class="artistSectionTwo">
+				<div class=" artistLeftContainer">
+					<div class="artistLocation"></div>
+					<div class="artistHotness"></div>
+					<div class="artistUrl"></div>
+				</div>
+				<div class="artistRightContainer">
+					<div class="artistBio"></div>
+				</div>
+			</div>
+			<!-- End of section two -->
+			<!-- start of section three title -->
+			<div class="sectionTitle">
+				<div class="leftTitle">
+					<h1>News</h1>
+				</div>	
+				<div class="rightTitle">
+					<h1>Blog</h1>
+				</div>
+			</div>
+			<!-- end of section three title -->
+			<!-- start of section three -->
+			<div class="artistSectionThree">
+				<div class="artistLeftContainer">
+					
+				</div>
+				<div class="artistRightContainer">
+					
+				</div>
+			</div>
+			<!-- end of section three -->
+			<!-- start of section four title -->
+			<div class="videoTitle">
+				<h1>Video</h1>
+			</div>
+			<!-- end of section four title -->
+			<!-- start of section four -->
+			<div class="artistSectionFour">
+				<div class="artistVideo"></div>
+			</div>
 		</section>
-		<section class="blogNewsContainer">
-			<div class="artistBlog">
-				
+	</section>
+	<section class="flickityGallery">
+		<div class="Title">
+			<div class="lastestTitle">
+				<h1>Hot Artists</h1>
+			</div>	
+		</div>
+		<div class="gallery js-flickity"
+			data-flickity-options='{ "freeScroll": true, "wrapAround": true,
+			"autoPlay": true 
+			 }'>
+			<div class=" flick1 gallery-cell">
+		  		
 			</div>
-			<div class="artistNews">
-				
-			</div>
-		</section>
-	</section> <!-- end of artist whole container -->
-	<!-- <section>
-		<div class="gallery">
-			<a href="facebook.com"><img class="flickity" src="images/image1.jpg" alt="tada"></a>
-			<a href="facebook.com"><img class="flickity" src="images/image2.jpg" alt="tada"></a>
-			<a href="facebook.com"><img class="flickity" src="images/image2.jpg" alt="tada"></a>
-			<a href="facebook.com"><img class="flickity" src="images/image4.jpg" alt="tada"></a>
-			<a href="facebook.com"><img class="flickity" src="images/image5.jpg" alt="tada"></a>
+		  	<div class=" flick2 gallery-cell">
+		  		
+		  	</div>
+		  	<div class=" flick3 gallery-cell">
+		  		
+		  	</div>
+		  	<div class=" flick4 gallery-cell">
+		  		
+		  	</div>
+		  	<div class=" flick5 gallery-cell">
+		  		
+		  	</div>
 		</div>
 	</section>
-	<!-- end of gallery --> 
+	<!-- end of gallery 
 	<!-- start of fillerSection -->
-	<section class="fillerSecond">
-		<h1> Music can change the world because it can change people.</h1>
+	<section class="distributors">
+		<ul class="distContainer">
+			<li class="distBox">
+				<a href="http://www.universalmusic.com"><img src="http://lastgang.com/wp-content/uploads/2015/05/universal-logo.png"></a>
+			</li>
+			<li class="distBox">
+				<a href="http://www.believedigital.ca"><img src="http://lastgang.com/wp-content/uploads/2015/07/affiliate_Believe-logo.png"></a>
+			</li>
+			<li class="distBox">
+				<a href="https://www.redmusic.com"><img src="http://lastgang.com/wp-content/uploads/2015/07/affiliate_RED-logo.png"></a>
+			</li>
+			<li class="distBox">
+				<a href="http://www.pias.com"><img src="http://lastgang.com/wp-content/uploads/2015/07/affiliate_PIAS-logo.png"></a>
+			</li>
+		</ul>
 	</section>
-	<footer>
+	<footer class = "footer1">
+		<div class="footerSquare">
+			<div class="footer1Content">
+				<h1>Contact</h1>
+				<p>
+				171 East Liberty St <br>
+				Suite 330<br>
+				Toronto, On <br>
+				M6K 3P6<br>
+				Canada<br>
+				</p>
+				<p>
+				phone:	(416)534-3000<br>
+				fax: (416)534-3005<br>
+				</p>
+				<p>
+				info@lastgang.com
+				</p>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer2">
+		<div class="footer2Container">
+			<h1>Social</h1>
+			<div class="socialMainParent">
+				<ul class="socialParent1">
+					<li class="socialBox">
+						<a  class=" social facebook"   href  ="http://www.facebook.com/LastGangRecords"><i class="fa fa-facebook"></i> </a>
+					</li>
+					<li class="socialBox">
+						<a  class=" social twitter"   href  ="http://twitter.com/lastgangent"><i class="fa fa-twitter"></i></a>
+					</li>
+				</ul>
+				<ul class="socialParent2">
+					<li class="socialBox">
+						<a  class=" social instagram"   href  ="https://www.facebook.com/LastGangRecords"><i class="fa fa-instagram"></i> </a>
+					</li>
+					<li class="socialBox">
+						<a  class=" social youtube"   href  ="www.youtube.com/user/lastgangrecords"><i class="fa fa-youtube"></i></a>
+					</li>
+				</ul>
+				<ul class="socialParent3">
+					<li class="socialBox">
+						<a  class=" social youtube"   href  ="www.youtube.com/user/lastgangrecords"><i class="fa fa-youtube"></i></a>
+						
+					</li>
+				</ul>	
+			</div>
+		</div>
+​
 		
 	</footer>
-	<!-- script -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- flickity -->
-
+	</div>
+	</div>
+<!-- script -->
+<!-- When flickity is on top, it works -->
+<!-- when the jquery library is not top, it works -->
+​
+<script src="/path/to/flickity.pkgd.min.js"></script>
+​
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
-
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+​
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+​
+​
 <script src="scripts/app.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+​
 </body>
 </html>
+​
+<!-- Design Inspiration
+https://onepagelove.com/sonorama
+​
+photos
+Last Gang Records
+​
+Carousel
+Flickity -->

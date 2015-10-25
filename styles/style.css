@@ -122,6 +122,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 0;
   content: " ";
   clear: both;
+<<<<<<< HEAD
   height: 0; }
 
 * {
@@ -387,3 +388,70 @@ button {
 
 .artistNews {
   background: green; }
+=======
+  height: 0; 
+}
+
+* {
+  box-sizing: border-box; }
+
+body{
+  background: lightblue;
+}
+
+section.artistPageSection {
+  height: 100vh;
+  background: tomato; 
+}
+
+.wrapper{
+ max-width: 950px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+input{
+ border: none;
+  padding: 10px 25px;
+}
+
+input[type=text]{
+ margin-top: 200px;
+ border: none;
+ background: yellow;
+ width: 50%;
+}
+
+input[type=submit]{
+ background: tomato;
+}
+
+ul.ui-autocomplete.ui-menu li{
+   background: tomato;
+   color: white;
+   border-bottom: 1px solid white;
+  /* width: 50%;*/
+}
+
+ul.ui-autocomplete.ui-menu li:hover{
+ background: yellow;
+}
+
+
+ui-autocomplete-input{
+ background: red;
+}
+
+.artistBlog, .artistNews, .artistNews, .blogNewsContainer, .artistVideo, .artistBio{
+ margin-bottom: 50px;
+ width: 40%;
+}
+
+h4{
+ color: grey;
+}
+
+h1{
+ color: #333;
+}
+>>>>>>> 9628ec7072f2208988f9c588271f6a2770eabfed

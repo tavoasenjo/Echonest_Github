@@ -1,0 +1,27 @@
+<!-- <section class="mainMiddleContainer">
+			<div class="largeBox artistLeftContainer"> -->
+			<!-- 	<div class="artistImages"></div>
+				<div class="artistBio"></div>
+			</div>
+			<div class="largeBox artistRightContainer">
+				<div class="artistContent">
+					
+					<div class="artistHotness"></div>
+					<div class="artistLocation"></div>
+					<div class="artistUrl"></div>
+				</div>
+				<div class="artistNews">
+				</div>
+			</div>
+		</section> 
+		<section class="artistVideo">
+		</section>
+		<section class="blogNewsContainer">
+			<div class="artistBlog">
+				
+			</div>
+			
+				
+			</div>
+		</section>
+	</section> <!-- end of artist whole container
