@@ -125,8 +125,28 @@ artistList.artistBlog = function(artistProfile){
 		$('.artistBlog').append('<h4>Blog Profile: </h4>'+artistProfile.blogs[0].date_posted)
 		$('.artistBlog').append('<h4>Blog Url: </h4>'+artistProfile.blogs[0].url)
 	};
+	artistList.artistVid(artistProfile);
 	console.log(artistProfile.blogs[0]);
 
+};
+
+
+
+artistList.artistVid = function(artistProfile){
+	if(artistProfile.video === undefined){
+		$('.artistVideo').html('No video found');
+	}
+	else{
+	$.each(artistProfile.video, function(key, value){
+	var checkYoutube = artistProfile.video[key].site;
+	if (checkYoutube === 'youtube.com'){
+		var oriUrl = artistProfile.video[key].url;
+		var youtubeId = oriUrl.slice(31, 42);
+		
+		$('.artistVideo').html('<iframe width="853" height="480" src=https://www.youtube-nocookie.com/embed/'+ youtubeId +'?controls=0&amp;showinfo=0" frameborder="0"></iframe>')
+			};
+		});
+	};
 };
 
 /* 
